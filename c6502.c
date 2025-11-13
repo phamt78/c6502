@@ -2014,15 +2014,15 @@ void ABS_X()
     if (((c6502.abs_address & 0xFF00) != (MSB << 8)))
     {
         // ADD a cycle if Address mode is one of the following:
-        if (lookup_table[c6502.opcode].run == ADC |
-            lookup_table[c6502.opcode].run == AND |
-            lookup_table[c6502.opcode].run == EOR |
-            lookup_table[c6502.opcode].run == CMP |
-            lookup_table[c6502.opcode].run == LDA |
-            lookup_table[c6502.opcode].run == LDY |
-            lookup_table[c6502.opcode].run == ORA |
-            lookup_table[c6502.opcode].run == SBC |
-            lookup_table[c6502.opcode].run == NOP)
+        if ((lookup_table[c6502.opcode].run == ADC) |
+            (lookup_table[c6502.opcode].run == AND) |
+            (lookup_table[c6502.opcode].run == EOR) |
+            (lookup_table[c6502.opcode].run == CMP) |
+            (lookup_table[c6502.opcode].run == LDA) |
+            (lookup_table[c6502.opcode].run == LDY) |
+            (lookup_table[c6502.opcode].run == ORA) |
+            (lookup_table[c6502.opcode].run == SBC) |
+            (lookup_table[c6502.opcode].run == NOP))
         {
             c6502.cycles++;
         }
@@ -2051,15 +2051,15 @@ void ABS_Y()
     if ((c6502.abs_address & 0xFF00) != (MSB << 8))
     {
         // ADD a cycle if Address mode is one of the following:
-        if (lookup_table[c6502.opcode].run == ADC |
-            lookup_table[c6502.opcode].run == AND |
-            lookup_table[c6502.opcode].run == CMP |
-            lookup_table[c6502.opcode].run == EOR |
-            lookup_table[c6502.opcode].run == LAX |
-            lookup_table[c6502.opcode].run == LDA |
-            lookup_table[c6502.opcode].run == LDX |
-            lookup_table[c6502.opcode].run == ORA |
-            lookup_table[c6502.opcode].run == SBC)
+        if ((lookup_table[c6502.opcode].run == ADC) |
+            (lookup_table[c6502.opcode].run == AND) |
+            (lookup_table[c6502.opcode].run == CMP) |
+            (lookup_table[c6502.opcode].run == EOR) |
+            (lookup_table[c6502.opcode].run == LAX) |
+            (lookup_table[c6502.opcode].run == LDA) |
+            (lookup_table[c6502.opcode].run == LDX) |
+            (lookup_table[c6502.opcode].run == ORA) |
+            (lookup_table[c6502.opcode].run == SBC))
         {
             c6502.cycles++;
         }
@@ -2125,14 +2125,14 @@ void IND_Y()
     if ((c6502.abs_address & 0xFF00) != (MSB << 8))
     {
         // ADD a cycle if Address mode is one of the following:
-        if (lookup_table[c6502.opcode].run == ADC |
-            lookup_table[c6502.opcode].run == AND |
-            lookup_table[c6502.opcode].run == CMP |
-            lookup_table[c6502.opcode].run == EOR |
-            lookup_table[c6502.opcode].run == LAX |
-            lookup_table[c6502.opcode].run == LDA |
-            lookup_table[c6502.opcode].run == ORA |
-            lookup_table[c6502.opcode].run == SBC)
+        if ((lookup_table[c6502.opcode].run == ADC) |
+            (lookup_table[c6502.opcode].run == AND) |
+            (lookup_table[c6502.opcode].run == CMP) |
+            (lookup_table[c6502.opcode].run == EOR) |
+            (lookup_table[c6502.opcode].run == LAX) |
+            (lookup_table[c6502.opcode].run == LDA) |
+            (lookup_table[c6502.opcode].run == ORA) |
+            (lookup_table[c6502.opcode].run == SBC))
         {
             c6502.cycles++;
         }
