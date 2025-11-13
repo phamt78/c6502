@@ -1,3 +1,5 @@
+//bus.h
+
 #include <stdint.h>
 #include <stdbool.h>
 
@@ -12,3 +14,4 @@ uint8_t DATABUS; // Data from busline.
 uint8_t cpu_read(uint16_t abs_address);
 
 void cpu_write(uint16_t abs_address, uint8_t data);
+
