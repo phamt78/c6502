@@ -3,6 +3,10 @@
 #include "bus.h"
 #include <stdio.h>
 
+// Global variable definitions
+uint8_t ADDRESS[65536];
+uint8_t DATABUS;
+
 uint8_t cpu_read(uint16_t abs_address)
 {
     DATABUS = ADDRESS[abs_address];

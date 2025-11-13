@@ -11,6 +11,9 @@ M7  memory bit 7
 
 #include "c6502.h"
 
+// Global variable definition
+c6502_cpu c6502;
+
 /*
 c6502_init() Initialize 6502 processor to boot up state.
 On Power up the Interrupt disable flag is initialised to 1 by the CPU reset logic.

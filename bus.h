@@ -7,9 +7,9 @@
 
 // The 6502 has a 16 bit address space alowing it directly access 2^16 = 64KB of memory.
 
-uint8_t ADDRESS[65536];
+extern uint8_t ADDRESS[65536];
 
-uint8_t DATABUS; // Data from busline.
+extern uint8_t DATABUS; // Data from busline.
 
 uint8_t cpu_read(uint16_t abs_address);
 

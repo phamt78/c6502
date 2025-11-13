@@ -36,7 +36,7 @@ typedef struct
 } c6502_cpu;
 
 // Struct used to manipulate state of 6502 computer
-c6502_cpu c6502;
+extern c6502_cpu c6502;
 
 // Struct used for lookup table
 typedef struct
