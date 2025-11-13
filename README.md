@@ -1,20 +1,24 @@
 # c6502
 
-6502 emulator written in c.
+Welcome to **c6502** — a retro computing adventure brought to life in C!
 
-Home video game consoles and home computers of the 1970s through the early 1990s, such as the Atari 2600, Atari 8-bit computers, Apple II, Nintendo Entertainment System, Commodore 64, Atari Lynx, BBC Micro and others, use the 6502 processor.
+The legendary 6502 processor powered a generation of classics. From the Atari 2600, Apple II, and Commodore 64 to the Nintendo Entertainment System and beyond, these machines sparked the imaginations of millions from the 1970s through the early 1990s.
 
-I grew up playing a lot these console so I thought it will be fun to emulate the processor first and maybe later if time permit emulate one of these console next.
+I grew up immersed in the magic of these consoles, and I always wondered what made them tick. This project started as a personal challenge: Could I capture the heart of those beloved systems by emulating the mighty 6502? My first goal is a faithful processor emulator; if time allows, maybe one day it’ll breathe new life into a retro console or two!
 
-The refrence listed below was used to implement the 6502 emulator:
+### References and Inspirations
 
-https://www.masswerk.at/6502/6502_instruction_set.html
+The following invaluable resources guided the implementation of this 6502 emulator:
 
-https://www.nesdev.org/wiki/NES_reference_guide
+- [6502 Instruction Set (masswerk.at)](https://www.masswerk.at/6502/6502_instruction_set.html)
+- [NES Reference Guide (nesdev.org)](https://www.nesdev.org/wiki/NES_reference_guide)
 
+### Testing
 
-The nestest.nes rom from Kevin Horton is used to test this 6502 emulator.
+Rigorous testing is powered by the iconic **nestest.nes** ROM from Kevin Horton. For full details on the testing process, see the included `nestest.txt` document.
 
-See the nestest.txt document for more information.
+---
+
+Whether you’re here to reminisce, learn, or hack, I hope you enjoy diving into 6502 emulation as much as I enjoyed building it!
 
 
