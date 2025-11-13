@@ -1,5 +1,5 @@
 # c6502
-6502 emulator
+6502 emulator.
 
 Reference:
 
